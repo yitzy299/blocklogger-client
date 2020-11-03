@@ -1,0 +1,35 @@
+{
+  "schemaVersion": 1,
+  "id": "blocklogger-client",
+  "version": "${version}",
+
+  "name": "Blocklogger Client",
+  "description": "Allows additional blocklogger features where installed on the server",
+  "authors": [
+    "cookiejarapps"
+  ],
+  "contact": {
+    "homepage": "https://mods.dttp.tech",
+    "sources": "https://github.com/yitzy299/blocklogger-client"
+  },
+
+  "license": "GPL-3.0",
+  "icon": "assets/blocklogger-client/icon.png",
+
+  "environment": "client",
+  "entrypoints": {
+    "main": [
+      "tech.dttp.blocklogger.client.BlockloggerClient"
+    ]
+  },
+  "mixins": [
+    "blocklogger-client.mixins.json"
+  ],
+  
+
+  "depends": {
+    "fabricloader": ">=0.10.6",
+    "fabric": ">=0.25.1",
+    "minecraft": "1.16.4"
+  }
+}
